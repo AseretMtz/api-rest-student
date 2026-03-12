@@ -1,5 +1,7 @@
 from pydantic import BaseModel
 
 class StudentCreate(BaseModel):
-  name: str
-  age: int
+  DNI: str
+  nombres: str
+  notas:List[float]
+  promedio: int
